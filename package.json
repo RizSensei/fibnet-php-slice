@@ -1,0 +1,11 @@
+{
+  "name":"encode",
+  "scripts": {
+    "css":"tailwindcss -i ./pubic/css/input.css -o ./public/css/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "tailwindcss": "^3.4.13"
+  }
+}
