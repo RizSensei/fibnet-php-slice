@@ -1,6 +1,6 @@
 <div class="relative h-[400px] 2xl:h-[600px] w-full">
       <img
-        src=".<?= $path ?>/assets/images/background-3.png"
+        src="<?= $path ?>/assets/images/background-3.png"
         alt=""
         class="h-full w-full object-cover"
       />
@@ -8,9 +8,9 @@
       <div
         class="absolute top-5 2xl:top-20 left-10 bg-black bg-opacity-70 text-white"
       >
-        <div class="max-w-md p-5">
+        <div class="max-w-md p-5 flex flex-col gap-5">
           <h3 class="w-max pb-1 underline underline-offset-8">About Us</h3>
-          <p class="mt-5 text-base">
+          <span class="text-white text-base">
             Welcome to Encode Genetics and Diagnostic Lab Pvt. Ltd., NPHL
             approved “B” Category lab, where cutting-edge science meets
             compassionate care. At ENCODE, we specialize in providing
@@ -20,7 +20,7 @@
             diagnosis for a medical condition, or guidance on personalized
             treatment options, ENCODE is here to support you every step of the
             way
-          </p>
+          </span>
         </div>
       </div>
     </div>

@@ -4,22 +4,9 @@
   <div class="flex justify-end items-center">
     <div class="flex items-center gap-5">
       <div class="hidden lg:inline-block gap-2">
-        <ul
-          id="nav_ul"
-          class="list-none text-sm flex flex-col lg:flex-row gap-5">
-          <script>
-            const nav_items = navItems
-              .map(
-                (item) => `
-                    <li class="nav_li">
-                        <a href="<?= $path ?>/${item.route}.php" class="navbar-anchor-links">${item.name}</a>
-                    </li>
-                    `
-              )
-              .join("");
-            document.getElementById("nav_ul").innerHTML = nav_items;
-          </script>
-        </ul>
+        <?php
+        include '_partials/_nav_items.php';
+        ?>
       </div>
       <a href="<?= $path ?>/book-test.php"
         class="flex justify-center px-3 py-2 gap-2 items-center bg-primary text-white font-semibold">

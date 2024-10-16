@@ -567,6 +567,10 @@ select {
   margin-bottom: 2.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
