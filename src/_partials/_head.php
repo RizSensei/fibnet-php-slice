@@ -6,6 +6,10 @@
 include 'path.php';
 ?> 
 
+<?php
+ clearstatcache();
+?>
+
 <!-- tailwind output file -->
 <link rel="stylesheet" href="<?= $path ?>/assets/css/output.css" />
 <!-- tailwind output file -->
@@ -14,6 +18,7 @@ include 'path.php';
 
 <script src="<?= $path ?>/assets/js/script.js" defer></script>
 
+<script src="https://kit.fontawesome.com/0a09f83869.js" crossorigin="anonymous"></script>
 
 <!-- mock data scripts  -->
 <script src="<?= $path ?>/assets/data/client.js"></script>
@@ -37,3 +42,9 @@ include 'path.php';
 <script src="<?= $path ?>/assets/js/owl.js"></script>
 
 <!-- owl carousel  -->
+
+
+<!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- aos -->

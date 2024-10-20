@@ -1,4 +1,15 @@
 $(document).ready(function () {
+  $(document).ready(function () {
+    $(".owl-carousel-banner").owlCarousel({
+      loop: false,
+      nav: false,
+      dots: false,
+      margin: 0,
+      items:1
+    });
+  });
+
+
   $(".owl-carousel-testimonial").owlCarousel({
     loop: false,
     nav: true,

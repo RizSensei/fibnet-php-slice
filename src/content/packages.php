@@ -20,7 +20,7 @@ echo pageBannerComponent('Package');
                             .map(
                                 (category) =>
                                 `
-                      <button class="text-primary px-5 py-3 flex items-center gap-5 w-full bg-white hover:bg-neutral-100 border-bottom">
+                      <button class="text-primary px-5 py-3 flex items-center gap-5 w-full bg-white hover:bg-neutral-100 border-x-0 border-t-0 border-bottom">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                               <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
                             </svg>
@@ -102,7 +102,7 @@ echo pageBannerComponent('Package');
                     const packages = [1, 1, 1, 1]
                         .map(
                             () => `
-             <div class="border border-solid border-neutral-300 shadow-lg rounded-md">
+             <a href="<?= $path ?>/package-details.php" class="border border-solid border-neutral-300 shadow-lg rounded-md">
               <div class="grid grid-cols-3 gap-1 overflow-hidden">
                 <div class="col-span-2 flex flex-col gap-2 p-5 z-20">
                   <img
@@ -122,7 +122,7 @@ echo pageBannerComponent('Package');
                   </div>
                 </div>
             </div>
-          </div>
+          </a>
                     `
                         )
                         .join("");

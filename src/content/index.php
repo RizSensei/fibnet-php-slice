@@ -1,124 +1,87 @@
- 
  <!-- landing banner  -->
-      <div class="relative h-[500px] 2xl:h-[700px] w-full -z-20">
-        <img
-          src="<?= $path ?>/assets/images/landing-background.png"
-          alt=""
-          class="h-full w-full object-cover"
-        />
+ <div class="-z-40 owl-carousel owl-carousel-banner owl-theme">
+   <div class="relative h-[500px] 2xl:h-[700px] w-full">
+     <img
+       src="<?= $path ?>/assets/images/landing-background.png"
+       alt=""
+       class="h-full w-full object-cover" />
+   </div>
+ </div>
 
-        <!-- <div class="absolute top-1/2 -translate-y-1/2 left-20">
-          <div class="bg-black bg-opacity-50 flex flex-col gap-5 text-white p-10">
-            <h1 class="font-semibold">Welcome to <span class="text-5xl">ENCODE</span></h1>
-            <h2>Unlock Wellness @ Your Doorstep</h2>
-            <button
-            class="uppercase bg-primary text-white flex items-center gap-2 px-5 py-3"
-          >
-            Book Home Collection
-          </button>
-          </div>
-        </div> -->
-      </div>
+ <div class="relative h-full w-full pb-5 z-20 bg-primary">
+   <div class="z-20 flex px-5 py-5 sm:px-10 xl:px-32 2xl:px-44 gap-5">
+     <div class="z-20 w-full flex justify-center gap-5">
+       <div id="details-container"
+         class="z-20 grid grid-cols-2 md:grid-cols-4 gap-3">
 
-      <!-- <div class="relative">
-        <div class="flex px-5 py-5 sm:px-10 xl:px-32 2xl:px-44 gap-5">
-          <div class="max-w-xs w-full">
-            <div
-              class="grid grid-cols-2 gap-3 rounded-[4rem] overflow-hidden shadow-2xl"
-            >
-              <div class="p-5 shadow-lg bg-primary">
-                <div class="w-full flex flex-col items-center justify-center">
-                  <div class="p-3 rounded-full bg-white">
-                    <img
-                      src="<?= $path ?>/assets/images/icon/delivery.png"
-                      alt=""
-                      class=""
-                    />
-                  </div>
-                  <h4 class="mt-2 text-white text-center font-medium">
-                    Free Home Collection
-                  </h4>
-                </div>
-              </div>
-              <div class="p-5 shadow-lg bg-primary">
-                <div class="w-full flex flex-col items-center justify-center">
-                  <div class="p-3 rounded-full bg-white">
-                    <img
-                      src="<?= $path ?>/assets/images/icon/delivery.png"
-                      alt=""
-                      class=""
-                    />
-                  </div>
-                  <h4 class="mt-2 text-white text-center font-medium">
-                    Free Home Collection
-                  </h4>
-                </div>
-              </div>
-              <div class="p-5 shadow-lg bg-primary">
-                <div class="w-full flex flex-col items-center justify-center">
-                  <div class="p-3 rounded-full bg-white">
-                    <img
-                      src="<?= $path ?>/assets/images/icon/delivery.png"
-                      alt=""
-                      class=""
-                    />
-                  </div>
-                  <h4 class="mt-2 text-white text-center font-medium">
-                    Free Home Collection
-                  </h4>
-                </div>
-              </div>
-              <div class="p-5 shadow-lg bg-primary">
-                <div class="w-full flex flex-col items-center justify-center">
-                  <div class="p-3 rounded-full bg-white">
-                    <img
-                      src="<?= $path ?>/assets/images/icon/delivery.png"
-                      alt=""
-                      class=""
-                    />
-                  </div>
-                  <h4 class="mt-2 text-white text-center font-medium">
-                    Free Home Collection
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+         <script>
+           const details = [{
+               image: 'delivery.png',
+               label: 'Free Home Collection'
+             },
+             {
+               image: 'carbon_report.png',
+               label: 'Online Reports'
+             },
+             {
+               image: 'ph_note-duotone.png',
+               label: 'Online Booking'
+             },
+             {
+               image: 'fluent-mdl2_test-case.png',
+               label: '500+ Tests'
+             },
+           ]
 
-        <div class="absolute bottom-0 -z-0 w-full">
-          <img
-            src="<?= $path ?>/assets/images/wave-vector.png"
-            alt=""
-            class="h-[500px] w-full"
-          />
-        </div>
-      </div> -->
+           const items = details.map((item) => `
+                   <div class="p-5 shadow-lg bg-primary w-full">
+           <div class="w-full flex flex-col items-center justify-center">
+             <div class="p-3 rounded-full bg-white">
+               <img
+                 src="<?= $path ?>/assets/images/icon/${item.image}"
+                 alt=""
+                 class="" />
+             </div>
+             <h4 class="mt-2 text-white text-center font-medium">
+          ${item.label}
+             </h4>
+           </div>
+         </div>
+          `).join("");
+           document.getElementById("details-container").innerHTML = items;
+         </script>
+       </div>
+     </div>
+   </div>
+   <!-- <div class="absolute bottom-0 z-0 w-full">
+     <img
+       src="<?= $path ?>/assets/images/wave-vector.png"
+       alt=""
+       class="h-[500px] w-full" />
+   </div> -->
+ </div>
 
-      <!-- Encode Genetic & Diagnostic Lab health provides Free Home Collection -->
-      <div class="relative h-[500px] md:h-[400px] w-full">
-        <img
-          src="<?= $path ?>/assets/images/background-2.png"
-          alt=""
-          class="h-full w-full object-cover"
-        />
-        <div class="absolute inset-0 bg-primary bg-opacity-20">
-          <div class="h-full w-full flex flex-col items-center justify-center">
-            <h1
-              class="w-full max-w-3xl text-center text-white font-semibold px-5 sm:px-0"
-            >
-              Encode Genetic & Diagnostic Lab health provides Free Home
-              Collection
-            </h1>
-            <div class="mt-12">
-              <div
-                id="process-div"
-                class="max-w-4xl grid grid-cols-3 md:grid-cols-6 gap-2"
-              >
-                <script>
-                  const process = processes
-                    .map(
-                      (item, index) => `
+ <!-- Encode Genetic & Diagnostic Lab health provides Free Home Collection -->
+ <div class="relative h-[500px] md:h-[400px] w-full">
+   <img
+     src="<?= $path ?>/assets/images/background-2.png"
+     alt=""
+     class="h-full w-full object-cover" />
+   <div class="absolute inset-0 bg-primary bg-opacity-20">
+     <div class="h-full w-full flex flex-col items-center justify-center">
+       <h1
+         class="w-full max-w-3xl text-center text-white font-semibold px-5 sm:px-0">
+         Encode Genetic & Diagnostic Lab health provides Free Home
+         Collection
+       </h1>
+       <div class="mt-12">
+         <div
+           id="process-div"
+           class="max-w-4xl grid grid-cols-3 md:grid-cols-6 gap-2">
+           <script>
+             const process = processes
+               .map(
+                 (item, index) => `
                                 <div class="pentagon-wrapper">
                   <div class="pentagon-outer">
                     <div class="pentagon-inner">
@@ -128,47 +91,43 @@
                   <div class="pentagon-outer-content">${item}</div>
                 </div>
                   `
-                    )
-                    .join("");
-                  document.getElementById("process-div").innerHTML = process;
-                </script>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+               )
+               .join("");
+             document.getElementById("process-div").innerHTML = process;
+           </script>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 
-      <!-- Encode Genetic & Diagnostic Lab health check-up packages! -->
-      <div>
-        <div class="bg-primary px-5 py-5 sm:px-10 xl:px-32 2xl:px-44">
-          <div class="flex flex-col text-white items-center text-center">
-            <h1 class="w-full max-w-2xl text-center text-white font-semibold">
-              Encode Genetic & Diagnostic Lab health check-up packages!
-            </h1>
-            <div class="flex flex-wrap mt-5">
-              <button class="bg-white text-neutral-800">Show All</button>
-              <button class="bg-white text-neutral-800">
-                Whole Body Package
-              </button>
-              <button class="bg-white text-neutral-800">
-                Mom to Be Package
-              </button>
-              <button class="bg-white text-neutral-800">
-                Basic Health Package
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="px-5 py-10 sm:px-10 xl:px-32 2xl:px-44">
-          <div
-            id="package-container"
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
-          >
-            <script>
-              const packages_lists = [1, 1, 1, 1, 1, 1]
-                .map(
-                  (package) => `
-            <div class="border border-solid border-neutral-300 shadow-lg rounded-md">
+ <!-- Encode Genetic & Diagnostic Lab health check-up packages! -->
+ <div>
+   <div class="bg-primary px-5 py-5 sm:px-10 xl:px-32 2xl:px-44">
+     <div class="flex flex-col text-white items-center text-center">
+       <h1 class="w-full max-w-2xl text-center text-white font-semibold">
+         Encode Genetic & Diagnostic Lab health check-up packages!
+       </h1>
+       <div id="package-category-buttons" class="flex flex-wrap justify-center mt-5">
+         <script>
+           const package_categories = ["Show All", "Whole Body Package", "Mom to Be Package", "Basic Health Package"]
+           const categoriesBtns = package_categories.map((category) => `
+        <button class="button-style bg-white cursor-pointer px-3 py-2 border-0 text-neutral-800 font-medium text-sm hover:bg-neutral-300">${category}</button>
+          `).join("");
+           document.getElementById("package-category-buttons").innerHTML = categoriesBtns;
+         </script>
+       </div>
+     </div>
+   </div>
+   <div class="px-5 py-10 sm:px-10 xl:px-32 2xl:px-44">
+     <div
+       id="package-container"
+       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+       <script>
+         const packages_lists = [1, 1, 1, 1, 1, 1]
+           .map(
+             (package) => `
+            <a href="<?= $path ?>/package-details.php" class="border border-solid border-neutral-300 shadow-lg rounded-md">
               <div class="grid grid-cols-3 gap-1 overflow-hidden">
                 <div class="col-span-2 flex flex-col gap-2 p-5 ">
                   <img
@@ -188,96 +147,87 @@
                   </div>
                 </div>
             </div>
-          </div>
+          </a>
               `
-                )
-                .join("");
-              document.getElementById("package-container").innerHTML =
-                packages_lists;
-            </script>
-          </div>
-        </div>
-        <div class="px-5 py-10 sm:px-10 xl:px-32 2xl:px-44">
-          <div class="flex flex-col items-center justify-center">
-            <div
-              class="px-5 py-2 text-sm border border-solid border-neutral-500 text-neutral-600 rounded-lg"
-            >
-              Explore All Our Healthcare Packages?
-              <a href="#" class="no-underline font-semibold text-primary"
-                >Click Here</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+           )
+           .join("");
+         document.getElementById("package-container").innerHTML =
+           packages_lists;
+       </script>
+     </div>
+   </div>
+   <div class="px-5 py-10 sm:px-10 xl:px-32 2xl:px-44">
+     <div class="flex flex-col items-center justify-center">
+       <div
+         class="px-5 py-2 text-sm border border-solid border-neutral-500 text-neutral-600 rounded-lg">
+         Explore All Our Healthcare Packages?
+         <a href="#" class="no-underline font-semibold text-primary">Click Here</a>
+       </div>
+     </div>
+   </div>
+ </div>
 
-      <!-- are you seeking a test  -->
-      <div class="mt-5">
-        <div class="bg-primary px-5 sm:px-10 xl:px-32 2xl:px-44">
-          <div class="grid grid-cols-1 sm:grid-cols-2">
-            <div class="relative hidden sm:inline-block">
-              <img
-                src="<?= $path ?>/assets/images/lady-image.png"
-                alt=""
-                class="z-0 absolute bottom-0 -left-16 sm:-left-10"
-              />
-            </div>
-            <div class="z-10 flex flex-col gap-3 py-10">
-              <h2 class="text-white">"Are you seeking a test or packages?"</h2>
-              <form action="" class="relative">
-                <input
-                  type="search"
-                  name=""
-                  id=""
-                  class="w-full border-0 rounded-md pl-10"
-                  placeholder="Search for tests/packages..."
-                />
-                <span
-                  class="absolute top-1/2 left-2 -translate-y-1/2 text-neutral-500"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                    />
-                  </svg>
-                </span>
-              </form>
-              <div class="flex gap-2">
-                <button class="bg-white text-neutral-800 rounded-md">
-                  Select Tests
-                </button>
-                <button class="bg-white text-neutral-800 rounded-md">
-                  Select Packages
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+ <!-- are you seeking a test  -->
+ <div class="mt-5">
+   <div class="bg-primary px-5 sm:px-10 xl:px-32 2xl:px-44">
+     <div class="grid grid-cols-1 sm:grid-cols-2">
+       <div class="relative hidden sm:inline-block">
+         <img
+           src="<?= $path ?>/assets/images/lady-image.png"
+           alt=""
+           class="z-0 absolute bottom-0 -left-16 sm:-left-10" />
+       </div>
+       <div class="z-10 flex flex-col gap-3 py-10">
+         <h2 class="text-white">"Are you seeking a test or packages?"</h2>
+         <form action="" class="relative">
+           <input
+             type="search"
+             name=""
+             id=""
+             class="w-full border-0 rounded-md pl-10"
+             placeholder="Search for tests/packages..." />
+           <span
+             class="absolute top-1/2 left-2 -translate-y-1/2 text-neutral-500">
+             <svg
+               xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               class="size-6">
+               <path
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+             </svg>
+           </span>
+         </form>
+         <div class="flex gap-2">
+           <a href="<?= $path ?>/test-lists.php" class="text-sm font-semibold bg-white text-neutral-800 rounded-md px-5 py-3">
+             Select Tests
+           </a>
+           <a href="<?= $path ?>/packages.php" class="text-sm font-semibold bg-white text-neutral-800 rounded-md px-5 py-3">
+             Select Packages
+           </a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 
-      <!-- what our client says  -->
-      <div class="mt-5 px-5 py-10 sm:px-10 xl:px-32 2xl:px-44">
-        <h2 class="w-max font-medium underline underline-offset-8">
-          What Our Clients Say!
-        </h2>
-        <div class="mt-5">
-          <div
-            id="testimonials-container"
-            class="owl-carousel owl-carousel-testimonial owl-theme z-10"
-          >
-            <script>
-              const testimonials = [1, 1, 1, 1]
-                .map(
-                  (item) => `
+ <!-- what our client says  -->
+ <div class="mt-5 px-5 py-10 sm:px-10 xl:px-32 2xl:px-44">
+   <h2 class="w-max font-medium underline underline-offset-8">
+     What Our Clients Say!
+   </h2>
+   <div class="mt-5">
+     <div
+       id="testimonials-container"
+       class="owl-carousel owl-carousel-testimonial owl-theme z-10">
+       <script>
+         const testimonials = [1, 1, 1, 1]
+           .map(
+             (item) => `
               <div class="p-3 rounded-md shadow-lg">
               <div class="flex items-center gap-3 pb-2 border-bottom">
                 <div class="h-10 w-10 rounded-full overflow-hidden">
@@ -339,56 +289,54 @@
               </div>
             </div>
               `
-                )
-                .join("");
-              document.getElementById("testimonials-container").innerHTML =
-                testimonials;
-            </script>
-          </div>
-        </div>
-      </div>
+           )
+           .join("");
+         document.getElementById("testimonials-container").innerHTML =
+           testimonials;
+       </script>
+     </div>
+   </div>
+ </div>
 
-      <!-- our clients and partners  -->
-      <div class="mt-5 px-5 py-10 sm:px-10 xl:px-32 2xl:px-44">
-        <h2 class="w-max font-medium underline underline-offset-8">
-          Our Partners & Clients
-        </h2>
-        <div class="mt-5">
-          <div
-            id="clients-container"
-            class="owl-carousel owl-carousel-client owl-theme z-10"
-          >
-            <script>
-              const clientsList = clients
-                .map(
-                  (client) => `
+ <!-- our clients and partners  -->
+ <div class="mt-5 px-5 py-10 sm:px-10 xl:px-32 2xl:px-44">
+   <h2 class="w-max font-medium underline underline-offset-8">
+     Our Partners & Clients
+   </h2>
+   <div class="mt-5">
+     <div
+       id="clients-container"
+       class="owl-carousel owl-carousel-client owl-theme z-10">
+       <script>
+         const clientsList = clients
+           .map(
+             (client) => `
              <div class="h-24 w-full">
               <img src="<?= $path ?>/assets/images/partners/${client}" alt="" class="h-full w-full object-fit">
               </div>
             `
-                )
-                .join("");
-              document.getElementById("clients-container").innerHTML =
-                clientsList;
-            </script>
-          </div>
-        </div>
-      </div>
+           )
+           .join("");
+         document.getElementById("clients-container").innerHTML =
+           clientsList;
+       </script>
+     </div>
+   </div>
+ </div>
 
-      <!-- our blogs  -->
-      <div class="mt-5 px-5 py-10 sm:px-10 xl:px-32 2xl:px-44 bg-gray-50">
-        <h2 class="w-max font-medium underline underline-offset-8">
-          Our Blogs
-        </h2>
-        <div class="mt-5">
-          <div
-            id="blogs-container"
-            class="owl-carousel owl-carousel-blog owl-theme z-10"
-          >
-            <script>
-              const blogsLists = [1, 1, 1, 1]
-                .map(
-                  (item) => `
+ <!-- our blogs  -->
+ <div class="mt-5 px-5 py-10 sm:px-10 xl:px-32 2xl:px-44 bg-gray-50">
+   <h2 class="w-max font-medium underline underline-offset-8">
+     Our Blogs
+   </h2>
+   <div class="mt-5">
+     <div
+       id="blogs-container"
+       class="owl-carousel owl-carousel-blog owl-theme z-10">
+       <script>
+         const blogsLists = [1, 1, 1, 1]
+           .map(
+             (item) => `
               <div>
               <div class="relative h-[220px] w-full rounded-md">
                 <img
@@ -420,8 +368,8 @@
                   How to Increase Hemoglobin Levels Quickly: Foods & Natural
                   Tips
                 </h4>
-                <button
-                  class="bg-primary text-white rounded-md flex items-center gap-2"
+                <a href="<?php $path ?>/blog-details.php"
+                  class="w-max px-3 py-2 text-sm bg-primary text-white rounded-md flex items-center gap-2"
                 >
                   <span>READ MORE</span>
                   <svg
@@ -438,14 +386,22 @@
                       d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
                     />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
               `
-                )
-                .join("");
-              document.getElementById("blogs-container").innerHTML = blogsLists;
-            </script>
-          </div>
-        </div>
-      </div>
+           )
+           .join("");
+         document.getElementById("blogs-container").innerHTML = blogsLists;
+       </script>
+     </div>
+   </div>
+ </div>
+
+ <div id="popup-layout" class="fixed top-0 h-[100vh] w-full bg-black bg-opacity-60 overflow-hidden z-50">
+   <div class="h-full grid place-items-center">
+     <?php
+      include '_partials/_popup.php';
+      ?>
+   </div>
+ </div>

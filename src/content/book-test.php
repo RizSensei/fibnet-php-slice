@@ -49,11 +49,11 @@ echo pageBannerComponent('Book A Test');
         </div>
         <div class="mt-5 w-full flex justify-center gap-2">
           <button
-            class="bg-primary text-white rounded-md">
+            class="px-5 py-2 2xl:text-base border-0 bg-primary text-white rounded-md">
             BOOK
           </button>
           <button
-            class="bg-primary text-white rounded-md">
+            class="px-5 py-2 2xl:text-base border-0 bg-primary text-white rounded-md">
             CANCEL
           </button>
         </div>

@@ -24,7 +24,7 @@ echo pageBannerComponent('Online Report');
                   placeholder="Password"
                 />
                 <button
-                  class="bg-primary text-white rounded-md"
+                  class="px-5 py-2 border-0 text-base bg-primary text-white rounded-md"
                 >
                   LOGIN
                 </button>

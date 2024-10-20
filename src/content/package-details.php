@@ -52,7 +52,7 @@ echo pageBannerComponent('Package Details');
                 </p>
 
                 <div class="mt-3">
-                    <button class="text-white bg-primary uppercase rounded-md">Book Now</button>
+                    <button class="px-5 py-2 cursor-pointer border-0 text-white bg-primary uppercase rounded-md">Book Now</button>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ echo pageBannerComponent('Package Details');
                   .slice(0, 3)
                   .map(
                     () => `
-             <div class="relative w-full border border-solid border-neutral-300 shadow-lg rounded-md overflow-hidden">
+             <a href="<?= $path ?>/package-details.php" class="relative w-full border border-solid border-neutral-300 shadow-lg rounded-md overflow-hidden">
               <div class="grid grid-cols-3 gap-1">
                 <div class="col-span-2 flex flex-col gap-2 p-5 z-20">
                   <img
@@ -84,7 +84,7 @@ echo pageBannerComponent('Package Details');
                     <div class="h-48 w-48 rounded-full bg-[#b4f3c3]"></div>
                   </div>
             </div>
-          </div>
+          </a>
                     `
                   )
                   .join("");

@@ -20,8 +20,8 @@ echo pageBannerComponent('Our Blogs');
         <div class="flex items-center gap-2">
           <h5 class="font-medium">Filter By</h5>
           <div class="flex gap-2">
-            <button class="bg-primary text-white rounded-md">Newest</button>
-            <button class="bg-primary text-white rounded-md">Oldest</button>
+            <button class="px-3 py-2 text-base border-0 bg-primary text-white rounded-md">Newest</button>
+            <button class="px-3 py-2 text-base border-0 bg-primary text-white rounded-md">Oldest</button>
           </div>
         </div>
         <form action="#" class="relative text-sm flex-grow">
@@ -86,8 +86,8 @@ echo pageBannerComponent('Our Blogs');
               <h4 class="font-medium break-words line-clamp-2">
                 How to Increase Hemoglobin Levels Quickly: Foods & Natural Tips
               </h4>
-              <button
-                class="bg-primary text-sm text-white rounded-md flex items-center gap-2"
+              <a href="<?= $path ?>/blog-details.php"
+                class="px-3 py-2 w-max bg-primary text-sm text-white rounded-md flex items-center gap-2"
               >
                 <span>READ MORE</span>
                 <svg
@@ -104,7 +104,7 @@ echo pageBannerComponent('Our Blogs');
                     d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
           `).join("");

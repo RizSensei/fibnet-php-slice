@@ -69,7 +69,7 @@ echo pageBannerComponent('Blog Details');
 
               <div class="flex justify-between border-bottom-pb-5">
                 <button
-                  class="flex gap-2 items-center bg-white text-neutral-500"
+                  class="cursor-pointer px-3 py-2 border-0 flex gap-2 items-center bg-white text-neutral-500"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ echo pageBannerComponent('Blog Details');
                   <span>Prev Post</span>
                 </button>
                 <button
-                  class="flex gap-2 items-center bg-white text-neutral-500"
+                  class="cursor-pointer px-3 py-2 border-0 flex gap-2 items-center bg-white text-neutral-500"
                 >
                   <span>Next Post</span>
                   <svg
@@ -110,13 +110,13 @@ echo pageBannerComponent('Blog Details');
             </div>
           </div>
           <div class="col-span-2 lg:col-span-1 flex flex-col gap-5">
-            <div class="px-5 py-10 bg-white">
+            <div class="px-5 py-5 bg-white">
               <form action="" class="relative">
                 <input
                   type="search"
                   name=""
                   id=""
-                  class="w-full border-0 rounded-md pl-10 py-5 bg-gray-100"
+                  class="w-full border-0 rounded-md pl-10 py-3 bg-gray-100"
                   placeholder="Search for blogs..."
                 />
                 <span
@@ -142,7 +142,7 @@ echo pageBannerComponent('Blog Details');
 
             <div class="bg-white">
               <h3
-                class="font-medium px-5 py-5 border border-solid border-x-0 border-t-0 border-primary"
+                class="font-medium px-5 py-3 border border-solid border-x-0 border-t-0 border-primary"
               >
                 Categories
               </h3>
@@ -152,7 +152,7 @@ echo pageBannerComponent('Blog Details');
                     .map(
                       (category) =>
                         `
-                <button class="text-primary px-5 py-3 flex items-center gap-5 w-full bg-white hover:bg-neutral-100 border-bottom">
+                <button class="cursor-pointer px-5 py-2 text-primary flex items-center gap-5 w-full bg-white hover:bg-neutral-100 border-x-0 border-t-0 border-bottom">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
                       </svg>
@@ -169,7 +169,7 @@ echo pageBannerComponent('Blog Details');
 
             <div class="bg-white">
               <h3
-                class="font-medium px-5 py-5 border border-solid border-x-0 border-t-0 border-primary"
+                class="font-medium px-5 py-3 border border-solid border-x-0 border-t-0 border-primary"
               >
                 Latest Posts
               </h3>
@@ -214,11 +214,11 @@ echo pageBannerComponent('Blog Details');
 
             <div class="bg-white">
               <h3
-                class="font-medium px-5 py-5 border border-solid border-x-0 border-t-0 border-primary"
+                class="font-medium px-5 py-3 border border-solid border-x-0 border-t-0 border-primary"
               >
                 Popular Tags
               </h3>
-              <div id="tags-container" class="mt-3 px-3 flex flex-wrap gap-1">
+              <div id="tags-container" class="mt-3 px-3 pb-2 flex flex-wrap gap-1">
                 <script>
                   const tags = [
                     "Genetics",
@@ -230,7 +230,7 @@ echo pageBannerComponent('Blog Details');
                   ]
                     .map(
                       (tag) => `
-                    <button class="rounded-full">${tag}</button>
+                    <button class="px-3 py-2 border-0 cursor-pointer rounded-full">${tag}</button>
                     `
                     )
                     .join("");

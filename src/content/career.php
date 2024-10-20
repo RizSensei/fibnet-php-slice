@@ -5,11 +5,11 @@
           </h4>
         </div>
 
-        <div class="mt-10 grid grid-cols-3 gap-5">
-          <div class="px-5 py-2 shadow-md">
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
+          <a href="<?= $path ?>/career-details.php" class="text-black px-5 py-2 border border-solid border-neutral-300 shadow-lg cursor-pointer hover:shadow-xl">
             <div class="pb-1 border-bottom">
-              <h4 class="font-medium 2xl:text-xl">Account and Admin Officer</h4>
-              <h5 class="flex items-center">
+              <h4 class="font-medium text-primary 2xl:text-xl">Account and Admin Officer</h4>
+              <h5 class="text-black flex items-center">
                 Posted Date:&nbsp;<span>2024/12/12</span>&nbsp;
                 <span class="text-primary">
                   <svg
@@ -31,11 +31,11 @@
             </div>
             <div>
               <ul class="mt-5 list-none text-sm">
-                <li>Openings : <span>5</span></li>
-                <li>Employment Type : <span>Full Time</span></li>
-                <li>Job Level : <span>Entry Level</span></li>
+                <li class="text-black">Openings : <span class="font-medium">5</span></li>
+                <li class="text-black">Employment Type : <span class="font-medium">Full Time</span></li>
+                <li class="text-black">Job Level : <span class="font-medium">Entry Level</span></li>
               </ul>
             </div>
-          </div>
+          </a>
         </div>
       </div>

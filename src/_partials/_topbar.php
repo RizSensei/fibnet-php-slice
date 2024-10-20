@@ -3,7 +3,7 @@
         class="text-xs 2xl:text-sm bg-white px-3 lg:px-10 py-2 border-bottom">
         <div class="flex justify-between">
             <div class="flex gap-1 items-center">
-                <img src="<?= $path ?>/assets/images/encode-logo.png" alt="" class="h-16" />
+                <a href="<?= $path ?>/index.php"><img src="<?= $path ?>/assets/images/encode-logo.png" alt="" class="h-16" /></a>
             </div>
             <div class="flex gap-5 items-center text-sm">
                 <div class="flex gap-3 max-w-48 w-full">

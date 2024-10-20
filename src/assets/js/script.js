@@ -21,3 +21,25 @@ if (closeMobileNavBlankRight) {
     mobileSidebar.classList.remove("show");
   });
 }
+
+  // setting timeout of 500ms for popup card to appear
+  setTimeout(function () {
+    $("#popup-card").fadeIn();
+  }, 1000);
+
+  // event listener to close the popup card
+  $("#popup-card-close").click(function () {
+    $("#popup-layout").hide().fadeOut(500);
+  });
+
+
+  const packageButtons = document.querySelectorAll(".button-style");
+
+  packageButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      packageButtons.forEach(function (btn) {
+        btn.classList.remove("package-btn-active");
+      });
+      this.classList.add("package-btn-active");
+    });
+  });

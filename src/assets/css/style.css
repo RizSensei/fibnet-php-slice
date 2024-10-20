@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 * {
   padding: 0;
@@ -10,30 +10,22 @@
   font-style: normal;
 }
 
-.font-nunito{
+.font-nunito {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
-p{
+p {
   color: #737373;
 }
 
-
-button {
-  border: none;
-  cursor: pointer;
-  width: max-content;
-  height: max-content;
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1.25rem;
+.package-btn-active{
+  background-color:#d4d4d4 !important;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -52,7 +44,7 @@ a{
   box-shadow: 0 0 0 1px #35b3a8;
 }
 
-.footer-ul > li > a{
+.footer-ul > li > a {
   color: black;
 }
 
@@ -97,8 +89,6 @@ a{
   opacity: 1;
   transform: translateX(0);
 }
-
-
 
 /* pentagon shape in home page  */
 .pentagon-wrapper {
@@ -154,6 +144,11 @@ a{
   padding: 10px 0px 20px 0px !important;
 }
 
+.owl-carousel-banner > .owl-stage-outer > .owl-stage{
+  padding: 0px 0px 0px 0px !important;
+
+}
+
 #testimonials-container > .owl-nav,
 #clients-container > .owl-nav,
 #teams-container > .owl-nav,
@@ -187,3 +182,31 @@ a{
 #blogs-container > .owl-nav > .owl-next:hover {
   background-color: #35b3a8 !important;
 }
+
+/* .animate-bgcolor-switch {
+  animation: changebg 2s linear infinite;
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-delay: 1000ms;
+}
+.animate-textcolor-switch {
+  animation: changetext 0.1s linear infinite;
+  transition-delay: 1000ms;
+}
+
+@keyframes changebg {
+  from {
+    background-color: #35b3a8;
+  }
+  to {
+    background-color: #fff;
+  }
+}
+@keyframes changetext {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: #35b3a8;
+  }
+} */

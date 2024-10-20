@@ -36,7 +36,7 @@ echo pageBannerComponent('Contact Us');
                         rows="5"></textarea>
                 </div>
                 <button
-                    class="mt-5 bg-primary text-white rounded-md">
+                    class="mt-5 button-style bg-primary text-white rounded-md">
                     Send Message
                 </button>
             </form>
