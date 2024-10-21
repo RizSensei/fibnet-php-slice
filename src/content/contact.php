@@ -27,7 +27,7 @@ echo pageBannerComponent('Contact Us');
                         type="text"
                         class="form-input input-style"
                         placeholder="Email Address*" />
-                    <input type="text" class="form-input" placeholder="Subject" />
+                    <input type="text" class="form-input input-style" placeholder="Subject" />
                     <textarea
                         name=""
                         id=""
@@ -36,7 +36,7 @@ echo pageBannerComponent('Contact Us');
                         rows="5"></textarea>
                 </div>
                 <button
-                    class="mt-5 button-style bg-primary text-white rounded-md">
+                    class="mt-5 cursor-pointer px-5 py-2 text-base border-0 bg-primary text-white rounded-md">
                     Send Message
                 </button>
             </form>

@@ -8,11 +8,11 @@
    </div>
  </div>
 
- <div class="relative h-full w-full pb-5 z-20 bg-primary">
-   <div class="z-20 flex px-5 py-5 sm:px-10 xl:px-32 2xl:px-44 gap-5">
-     <div class="z-20 w-full flex justify-center gap-5">
+ <div class="relative h-full md:h-[450px] w-full pb-5 z-20 bg-primary">
+   <div class="z-20 h-full flex flex-col-reverse md:flex-row-reverse justify-center items-center px-5 py-5 sm:px-10 xl:px-32 2xl:px-64 gap-5">
+     <div class="z-20 w-max flex gap-5">
        <div id="details-container"
-         class="z-20 grid grid-cols-2 md:grid-cols-4 gap-3">
+         class="z-20 grid grid-cols-2 gap-3">
 
          <script>
            const details = [{
@@ -33,32 +33,50 @@
              },
            ]
 
-           const items = details.map((item) => `
-                   <div class="p-5 shadow-lg bg-primary w-full">
-           <div class="w-full flex flex-col items-center justify-center">
-             <div class="p-3 rounded-full bg-white">
-               <img
-                 src="<?= $path ?>/assets/images/icon/${item.image}"
-                 alt=""
-                 class="" />
-             </div>
-             <h4 class="mt-2 text-white text-center font-medium">
-          ${item.label}
-             </h4>
-           </div>
-         </div>
+           const items = details.map((item, idx) => `
+            <div class="p-3 sm:p-5 border-2 shadow-lg bg-primary w-full h-max ${ idx === 0 ? "rounded-tl-[3rem]" : idx ===1 ? "rounded-tr-[3rem]" : idx === 2 ? "rounded-bl-[3rem]" : "rounded-br-[3rem]"} overflow-hidden" style={box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);}>
+              <div class="w-full flex flex-col items-center justify-center">
+                <div class="p-3 rounded-full bg-white">
+                  <img
+                    src="<?= $path ?>/assets/images/icon/${item.image}"
+                    alt=""
+                    class="h-10 sm:h-12 w-10 sm:w-12" />
+                </div>
+                <h4 class="mt-2 text-white text-center font-medium">
+                    ${item.label}
+                </h4>
+              </div>
+            </div>
           `).join("");
            document.getElementById("details-container").innerHTML = items;
          </script>
        </div>
      </div>
+     <div class="relative z-20 flex flex-col items-center justify-center">
+       <h1 class="z-20 text-white font-bold px-5 sm:px-0 text-center">Reliable & High Quality Service</h1>
+       <div class="z-20 h-[350px] w-[350px]">
+         <img src="<?= $path ?>/assets/images/svg/doctor-animate.svg" alt="" class="z-20 h-full w-full object-fit" />
+       </div>
+       <div class="absolute z-10 top-10 h-72 w-72 rounded-full bg-gradient-to-r from-[#35B3A8] to-[#174D48] rotate-45"></div>
+     </div>
    </div>
-   <!-- <div class="absolute bottom-0 z-0 w-full">
+   <div class="hidden lg:block absolute -bottom-1 z-0 w-full">
      <img
        src="<?= $path ?>/assets/images/wave-vector.png"
        alt=""
-       class="h-[500px] w-full" />
-   </div> -->
+       class="h-[550px] w-full" />
+   </div>
+   <div class=" lg:hidden absolute -top-20 md:-top-32 z-0 w-full">
+     <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg">
+       <defs>
+         <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+           <stop stop-color="rgba(53, 179, 168, 1)" offset="0%"></stop>
+           <stop stop-color="rgba(53, 179, 168, 1)" offset="100%"></stop>
+         </linearGradient>
+       </defs>
+       <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,49L120,40.8C240,33,480,16,720,49C960,82,1200,163,1440,163.3C1680,163,1920,82,2160,40.8C2400,0,2640,0,2880,8.2C3120,16,3360,33,3600,57.2C3840,82,4080,114,4320,106.2C4560,98,4800,49,5040,49C5280,49,5520,98,5760,147C6000,196,6240,245,6480,245C6720,245,6960,196,7200,147C7440,98,7680,49,7920,81.7C8160,114,8400,229,8640,285.8C8880,343,9120,343,9360,285.8C9600,229,9840,114,10080,130.7C10320,147,10560,294,10800,294C11040,294,11280,147,11520,106.2C11760,65,12000,131,12240,130.7C12480,131,12720,65,12960,57.2C13200,49,13440,98,13680,106.2C13920,114,14160,82,14400,106.2C14640,131,14880,212,15120,220.5C15360,229,15600,163,15840,138.8C16080,114,16320,131,16560,147C16800,163,17040,180,17160,187.8L17280,196L17280,490L17160,490C17040,490,16800,490,16560,490C16320,490,16080,490,15840,490C15600,490,15360,490,15120,490C14880,490,14640,490,14400,490C14160,490,13920,490,13680,490C13440,490,13200,490,12960,490C12720,490,12480,490,12240,490C12000,490,11760,490,11520,490C11280,490,11040,490,10800,490C10560,490,10320,490,10080,490C9840,490,9600,490,9360,490C9120,490,8880,490,8640,490C8400,490,8160,490,7920,490C7680,490,7440,490,7200,490C6960,490,6720,490,6480,490C6240,490,6000,490,5760,490C5520,490,5280,490,5040,490C4800,490,4560,490,4320,490C4080,490,3840,490,3600,490C3360,490,3120,490,2880,490C2640,490,2400,490,2160,490C1920,490,1680,490,1440,490C1200,490,960,490,720,490C480,490,240,490,120,490L0,490Z"></path>
+     </svg>
+   </div>
  </div>
 
  <!-- Encode Genetic & Diagnostic Lab health provides Free Home Collection -->
@@ -70,7 +88,7 @@
    <div class="absolute inset-0 bg-primary bg-opacity-20">
      <div class="h-full w-full flex flex-col items-center justify-center">
        <h1
-         class="w-full max-w-3xl text-center text-white font-semibold px-5 sm:px-0">
+         class="w-full max-w-xl text-center text-white font-semibold px-5 sm:px-0">
          Encode Genetic & Diagnostic Lab health provides Free Home
          Collection
        </h1>
@@ -127,7 +145,7 @@
          const packages_lists = [1, 1, 1, 1, 1, 1]
            .map(
              (package) => `
-            <a href="<?= $path ?>/package-details.php" class="border border-solid border-neutral-300 shadow-lg rounded-md">
+            <a href="<?= $path ?>/package-details.php" class="border border-solid border-neutral-300 shadow-lg rounded-md hover:shadow-xl transform ease-in-out duration-150">
               <div class="grid grid-cols-3 gap-1 overflow-hidden">
                 <div class="col-span-2 flex flex-col gap-2 p-5 ">
                   <img
@@ -135,10 +153,10 @@
                   alt=""
                   class="h-8 w-20"
                 />
-                <h3 class="text-neutral-800 font-semibold">BASIC HEALTH
+                <h3 class="text-neutral-800 font-semibold 2xl:text-xl">BASIC HEALTH
                   PACKAGE</h3>
-                  <h5 class=""><span class="text-neutral-700 line-through font-semibold">Rs 5300</span>&nbsp;&nbsp;<span class="text-primary font-semibold">Rs 3499</span></h5>
-                  <h5 class="font-semibold text-neutral-700">48 TESTS INCLUDED</h5>
+                  <h5 class="2xl:text-base "><span class="text-neutral-700 line-through font-semibold">Rs 5300</span>&nbsp;&nbsp;<span class="text-primary font-semibold">Rs 3499</span></h5>
+                  <h5 class="2xl:text-base font-semibold text-neutral-700">48 Tests Included</h5>
                 </div>
                 <div class="relative">
                   <img src="<?= $path ?>/assets/images/package-img-1.png" alt="" class="w-full h-full object-cover">
@@ -170,8 +188,8 @@
  <!-- are you seeking a test  -->
  <div class="mt-5">
    <div class="bg-primary px-5 sm:px-10 xl:px-32 2xl:px-44">
-     <div class="grid grid-cols-1 sm:grid-cols-2">
-       <div class="relative hidden sm:inline-block">
+     <div class="grid grid-cols-1 md:grid-cols-2">
+       <div class="relative hidden md:inline-block">
          <img
            src="<?= $path ?>/assets/images/lady-image.png"
            alt=""
@@ -368,7 +386,7 @@
                   How to Increase Hemoglobin Levels Quickly: Foods & Natural
                   Tips
                 </h4>
-                <a href="<?php $path ?>/blog-details.php"
+                <a href="<?= $path ?>/blog-details.php"
                   class="w-max px-3 py-2 text-sm bg-primary text-white rounded-md flex items-center gap-2"
                 >
                   <span>READ MORE</span>
@@ -398,10 +416,10 @@
    </div>
  </div>
 
- <div id="popup-layout" class="fixed top-0 h-[100vh] w-full bg-black bg-opacity-60 overflow-hidden z-50">
+ <!-- <div id="popup-layout" class="fixed top-0 h-[100vh] w-full bg-black bg-opacity-60 overflow-hidden z-50">
    <div class="h-full grid place-items-center">
      <?php
       include '_partials/_popup.php';
       ?>
    </div>
- </div>
+ </div> -->

@@ -6,9 +6,9 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
                     <div class="col-span-1 p-3">
                         <div class="flex gap-2 items-center">
-                            <hr class="bg-primary bg-opacity-50 w-16 h-1" />
+                            <hr class="bg-primary bg-opacity-50 w-16 h-1 border-0" />
                             <h4 class="font-seimbold text-gray-700">Career</h4>
-                            <hr class="bg-primary bg-opacity-50 w-16 h-1" />
+                            <hr class="bg-primary bg-opacity-50 w-16 h-1 border-0" />
                         </div>
                         <h1 class="mt-5 font-bold text-primary"> Account and Admin Officer</h1>
 
@@ -25,7 +25,7 @@
                         <div>
                             <div class="flex items-center gap-3">
                                 <h3 class="font-medium">Requirements</h3>
-                                <hr class="bg-primary w-16 h-1" />
+                                <hr class="bg-primary w-16 h-1 border-0" />
                             </div>
                             <div class="mt-2">
                                 <ul
@@ -75,7 +75,7 @@
                         <div class="mt-10">
                             <div class="flex items-center gap-3">
                                 <h3 class="font-medium">Responsibilities</h3>
-                                <hr class="bg-primary w-16 h-1" />
+                                <hr class="bg-primary w-16 h-1 border-0" />
                             </div>
                             <div class="mt-2">
                                 <ul
@@ -122,29 +122,29 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-span-1 p-3">
                         <div class="rounded-lg px-0 md:px-5 lg:px-10 2xl:px-20">
                             <h2 class="text-primary">Apply for this job</h2>
                             <div class="mt-5">
                                 <form action="" class="p-5">
                                     <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-5 gap-y-2 gap-5">
-                                        <div class="flex flex-col gap-1">
-                                            <label for="" class="text-sm text-primary">Name</label>
-                                            <input type="text" name="" id="" class="text-base rounded-md px-3 py-2 border-2 border-solid border-primary/50 focus:outline-none">
-                                        </div>
-                                        <div class="flex flex-col gap-1">
-                                            <label for="" class="text-sm text-primary">Address</label>
-                                            <input type="text" name="" id="" class="text-base rounded-md px-3 py-2 border-2 border-solid border-primary/50 focus:outline-none">
-                                        </div>
-                                        <div class="flex flex-col gap-1">
-                                            <label for="" class="text-sm text-primary">Phone</label>
-                                            <input type="text" name="" id="" class="text-base rounded-md px-3 py-2 border-2 border-solid border-primary/50 focus:outline-none">
-                                        </div>
-                                        <div class="flex flex-col gap-1">
-                                            <label for="" class="text-sm text-primary">Email</label>
-                                            <input type="email" name="" id="" class="text-base rounded-md px-3 py-2 border-2 border-solid border-primary/50 focus:outline-none">
-                                        </div>
+                                        <input
+                                            type="text"
+                                            class="form-input text-base rounded-md border-2 border-solid border-neutral-200 focus:outline-none"
+                                            placeholder="Full Name*" />
+                                        <input
+                                            type="text"
+                                            class="form-input text-base rounded-md border-2 border-solid border-neutral-200 focus:outline-none"
+                                            placeholder="Address*" />
+                                        <input
+                                            type="text"
+                                            class="form-input text-base rounded-md border-2 border-solid border-neutral-200 focus:outline-none"
+                                            placeholder="Phone*" />
+                                        <input
+                                            type="text"
+                                            class="form-input text-base rounded-md border-2 border-solid border-neutral-200 focus:outline-none"
+                                            placeholder="Email*" />
                                     </div>
 
                                     <div class="mt-5">

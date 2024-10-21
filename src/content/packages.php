@@ -102,7 +102,7 @@ echo pageBannerComponent('Package');
                     const packages = [1, 1, 1, 1]
                         .map(
                             () => `
-             <a href="<?= $path ?>/package-details.php" class="border border-solid border-neutral-300 shadow-lg rounded-md">
+             <a href="<?= $path ?>/package-details.php" class="border border-solid border-neutral-300 shadow-lg rounded-md hover:shadow-xl transform ease-in-out duration-150">
               <div class="grid grid-cols-3 gap-1 overflow-hidden">
                 <div class="col-span-2 flex flex-col gap-2 p-5 z-20">
                   <img

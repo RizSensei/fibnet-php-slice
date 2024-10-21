@@ -59,7 +59,7 @@
         </div>
 
         <div class="p-2 flex gap-2 items-center">
-            <div class="text-xs text-white"><i class="fa-solid fa-phone"></i></div>
+            <div class="text-xs text-white"><i class="fa-solid fa-location-dot"></i></div>
             <h5 class="text-xs font-bold text-white">3rd FLoor, Indira Bhawan, Thadodhunga, Lalitpur</h5>
         </div>
     </div>

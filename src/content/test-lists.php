@@ -42,7 +42,7 @@ echo pageBannerComponent('Test Lists');
     </form>
   </div>
   <div class="mt-5">
-    <div class="w-full overflow-hidden">
+    <div class="w-full overflow-x-auto">
       <table class="w-full text-left table-row overflow-auto">
         <thead>
           <tr id="test-lists-heads">

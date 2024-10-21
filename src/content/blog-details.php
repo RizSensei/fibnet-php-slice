@@ -181,9 +181,9 @@ echo pageBannerComponent('Blog Details');
                         <img src="https://images.pexels.com/photos/256262/pexels-photo-256262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="h-full w-full object-cover">
                     </div>
                     <div>
-                        <h4 class="line-clamp-2 font-medium">
+                        <a href="<?= $path ?>/blog-details.php" class="text-neutral-800 line-clamp-2 font-medium hover:underline ease-in-out duration-150 transform">
                             Understanding Hiatal Hernia: Symptoms, Causes, and Treatment Strategies!
-                        </h4>
+                        </a>
                         <div class="mt-2 flex items-center gap-2">
                             <div class="overflow-hidden text-primary">
                               <svg
@@ -230,7 +230,7 @@ echo pageBannerComponent('Blog Details');
                   ]
                     .map(
                       (tag) => `
-                    <button class="px-3 py-2 border-0 cursor-pointer rounded-full">${tag}</button>
+                    <button class="px-3 py-2 border-0 cursor-pointer rounded-full hover:bg-primary hover:text-white ease-in-out transform duration-150">${tag}</button>
                     `
                     )
                     .join("");

@@ -41,7 +41,7 @@ a {
 
 .input-style:focus {
   outline: none;
-  box-shadow: 0 0 0 1px #35b3a8;
+  /* box-shadow: 0 0 0 1px #35b3a8; */
 }
 
 .footer-ul > li > a {

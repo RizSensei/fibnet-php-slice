@@ -20,8 +20,8 @@ echo pageBannerComponent('Our Blogs');
         <div class="flex items-center gap-2">
           <h5 class="font-medium">Filter By</h5>
           <div class="flex gap-2">
-            <button class="px-3 py-2 text-base border-0 bg-primary text-white rounded-md">Newest</button>
-            <button class="px-3 py-2 text-base border-0 bg-primary text-white rounded-md">Oldest</button>
+            <button class="cursor-pointer px-3 py-2 text-base border-0 bg-primary text-white rounded-md">Newest</button>
+            <button class="cursor-pointer px-3 py-2 text-base border-0 bg-primary text-white rounded-md">Oldest</button>
           </div>
         </div>
         <form action="#" class="relative text-sm flex-grow">
