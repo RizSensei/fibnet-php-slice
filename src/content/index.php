@@ -145,20 +145,20 @@
          const packages_lists = [1, 1, 1, 1, 1, 1]
            .map(
              (package) => `
-            <a href="<?= $path ?>/package-details.php" class="border border-solid border-neutral-300 shadow-lg rounded-md hover:shadow-xl transform ease-in-out duration-150">
+             <a href="<?= $path ?>/package-details.php" class="border border-solid border-neutral-300 shadow-lg rounded-md hover:shadow-xl transform ease-in-out duration-150">
               <div class="grid grid-cols-3 gap-1 overflow-hidden">
-                <div class="col-span-2 flex flex-col gap-2 p-5 ">
+                <div class="col-span-2 flex flex-col gap-2 p-5 z-20">
                   <img
                   src="<?= $path ?>/assets/images/encode-logo.png"
                   alt=""
                   class="h-8 w-20"
                 />
-                <h3 class="text-neutral-800 font-semibold 2xl:text-xl">BASIC HEALTH
+                <h3 class="text-neutral-800 font-semibold">BASIC HEALTH
                   PACKAGE</h3>
-                  <h5 class="2xl:text-base "><span class="text-neutral-700 line-through font-semibold">Rs 5300</span>&nbsp;&nbsp;<span class="text-primary font-semibold">Rs 3499</span></h5>
-                  <h5 class="2xl:text-base font-semibold text-neutral-700">48 Tests Included</h5>
+                  <h5 class=""><span class="text-neutral-700 line-through font-semibold">Rs 5300</span>&nbsp;&nbsp;<span class="text-primary font-semibold">Rs 3499</span></h5>
+                  <h5 class="font-semibold text-neutral-700">48 TESTS INCLUDED</h5>
                 </div>
-                <div class="relative">
+                <div class="relative z-10">
                   <img src="<?= $path ?>/assets/images/package-img-1.png" alt="" class="w-full h-full object-cover">
                   <div class="-z-10 absolute -bottom-10 -right-5">
                     <div class="h-48 w-48 rounded-full bg-[#b4f3c3]"></div>
@@ -179,7 +179,7 @@
        <div
          class="px-5 py-2 text-sm border border-solid border-neutral-500 text-neutral-600 rounded-lg">
          Explore All Our Healthcare Packages?
-         <a href="#" class="no-underline font-semibold text-primary">Click Here</a>
+         <a href="<?= $path ?>/packages.php" class="no-underline font-semibold text-primary">Click Here</a>
        </div>
      </div>
    </div>
