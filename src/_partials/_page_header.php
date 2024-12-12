@@ -9,7 +9,7 @@ function renderPageHeaderSection($label) {
         />
         <div class="absolute bg-black bg-opacity-50 inset-0 h-full w-full">
           <div class="h-full w-full flex flex-col items-center justify-center">
-            <h1 class="text-white">' . htmlspecialchars($label) . '</h1>
+            <h1 class="text-white text-center">' . htmlspecialchars($label) . '</h1>
             <p class="mt-5 text-gray-300 text-xs font-medium">
               <a
                 href="/fibnet/src/index.php"

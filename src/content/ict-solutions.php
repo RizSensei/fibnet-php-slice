@@ -1,7 +1,10 @@
 <?php
-include './_partials/_service_header.php';
+include './_partials/_breadcrumb_header.php';
+$parent_label = "Service";
+$parent_label_href = "/fibnet/src/services.html";
 $label = "ICT Solutions";
-renderServiceHeaderSection($label);
+renderBreadcrumbHeaderSection($parent_label, $parent_label_href,  $label);
+
 ?>
 
 <section class="w-full px-5 sm:px-10 lg:px-20 2xl:px-32 py-10">
