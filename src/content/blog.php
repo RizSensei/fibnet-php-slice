@@ -1,114 +1,68 @@
-<!-- page banner  -->
 <?php
-include '_partials/_page_banner.php';
-echo pageBannerComponent('Our Blogs');
+include './_partials/_page_header.php';
+$label = " Blogs";
+renderPageHeaderSection($label);
 ?>
-<!-- page banner  -->
 
-<div class="px-5 py-10 sm:px-10 xl:px-32 2xl:px-44">
-      <div class="pb-5 border-bottom flex flex-wrap items-center gap-3">
-        <div class="flex items-center gap-2">
-          <select
-            class="form-select text-sm block w-full mt-1 rounded-md border-gray-300 shadow-sm"
-          >
-            <option disabled selected>Select Category</option>
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </select>
-        </div>
-        <div class="flex items-center gap-2">
-          <h5 class="font-medium">Filter By</h5>
-          <div class="flex gap-2">
-            <button class="cursor-pointer px-3 py-2 text-base border-0 bg-primary text-white rounded-md">Newest</button>
-            <button class="cursor-pointer px-3 py-2 text-base border-0 bg-primary text-white rounded-md">Oldest</button>
-          </div>
-        </div>
-        <form action="#" class="relative text-sm flex-grow">
-          <input
-            type="search"
-            name=""
-            id=""
-            class="w-full border border-neutral-200 rounded-md outline-none pl-10"
-            placeholder="Search for tests/packages..."
-          />
-          <span
-            class="absolute top-1/2 left-2 -translate-y-1/2 text-neutral-500"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-              />
-            </svg>
-          </span>
-        </form>
-      </div>
+<section
+  class="w-full px-5 sm:px-10 lg:px-20 2xl:px-32 py-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+  <div class="h-max flex flex-col rounded-2xl shadow-2xl p-5 order-2 md:order-1">
+    <div class="relative rounded-2xl overflow-hidden bg-gray-100">
+      <input
+        type="text"
+        placeholder="Enter keyword"
+        class="text-sm border-none w-full py-4 px-4 pr-10 bg-gray-100 text-gray-800" />
+      <span
+        class="w-max h-max absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-800">
+        <i class="fa-solid fa-arrow-right"></i>
+      </span>
+    </div>
 
-      <div id="blog-container" class="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
-        <script>
-          const blogs = [1,1,1].map((blog) => `
-           <div>
-            <div class="relative h-[220px] w-full rounded-md">
-              <img
-                src="https://images.pexels.com/photos/2751755/pexels-photo-2751755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-                class="h-full w-full object-cover rounded-md"
-              />
-              <div class="absolute -bottom-10 right-5">
-                <div
-                  class="h-24 w-24 text-xl font-bold rounded-full bg-primary text-white flex flex-col items-center justify-center"
-                >
-                  <span>12</span>
-                  <span class="uppercase">JUN</span>
-                </div>
-              </div>
-            </div>
-            <div class="mt-2 flex flex-col gap-2">
-              <div class="flex items-center gap-2">
-                <div class="h-8 w-8 rounded-full overflow-hidden">
-                  <img
-                    src="https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt=""
-                    class="h-full w-full object-cover"
-                  />
-                </div>
-                <span class="text-sm">Posted By: Admin</span>
-              </div>
-              <h4 class="font-medium break-words line-clamp-2">
-                How to Increase Hemoglobin Levels Quickly: Foods & Natural Tips
-              </h4>
-              <a href="<?= $path ?>/blog-details.php"
-                class="px-3 py-2 w-max bg-primary text-sm text-white rounded-md flex items-center gap-2"
-              >
-                <span>READ MORE</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          `).join("");
-          document.getElementById("blog-container").innerHTML = blogs;
-        </script>
+    <div class="mt-10 flex flex-col gap-2">
+      <div class="flex flex-row md:flex-col lg:flex-row gap-5">
+        <div
+          class="h-24 aspect-square overflow-hidden rounded-xl shrink-0">
+          <img
+            src="/fibnet/public/images/Header-Background.jpg"
+            alt=""
+            class="h-full w-full object-cover" />
+        </div>
+        <div>
+          <h6 class="text-dark-blue mb-2">August 32, 2023</h6>
+          <a
+            href="#"
+            class="font-semibold text-gray-800 hover:text-dark-blue smooth-transform">Don’t Miss Your Favorite Matches As We Stream Them Online</a>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="col-span-2 flex flex-col order-1 md:order-2">
+    <div
+      class="flex flex-col sm:flex-row rounded-2xl overflow-hidden shadow-2xl w-full h-full">
+      <div class="h-96 2xl:h-[450px] flex-1">
+        <img
+          src="https://wdtnetlink.wpengine.com/wp-content/uploads/2023/08/blog-11.jpg"
+          alt=""
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="w-full flex-1">
+        <div class="p-5">
+          <h4 class="text-dark-blue mb-2">August 32, 2023</h4>
+          <h3
+            class="font-semibold text-gray-800 hover:text-dark-blue smooth-transform">
+            Don’t Miss Your Favorite Matches As We Stream Them Online
+          </h3>
+          <p class="mt-5 text-sm text-gray-700 line-clamp-4">
+            Sit amet consectetur adipiscing elit pellentesque habitant
+            morbi. In tellus integer feugiat scelerisque varius morbi
+            enim. Sit amet nisl
+          </p>
+          <a
+            class="cursor-pointer mt-10 bg-transparent flex gap-2 border-none items-center text-gray-800 group-hover:text-dark-blue transform ease-in-out duration-150">
+            <h5 class="font-medium">Read More</h5>
+            <i class="fa-solid fa-plus"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>

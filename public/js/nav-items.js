@@ -1,0 +1,26 @@
+const navItems = [
+    {
+        label:"Home",
+        href:"/fibnet/src/index.php"
+    },
+    {
+        label:"Services",
+        href:"/fibnet/src/services.php"
+    },
+    {
+        label:"Products",
+        href:"/fibnet/src/products.php"
+    },
+    {
+        label:"Resources",
+        href:"/fibnet/src/resources.php"
+    },
+    {
+        label:"Blogs",
+        href:"/fibnet/src/blog.php"
+    },
+    {
+        label:"Contact",
+        href:"/fibnet/src/contact.php"
+    }
+]

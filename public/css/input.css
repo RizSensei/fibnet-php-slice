@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .padded-container{
+        @apply py-10 container mx-auto w-full overflow-hidden px-10 2xl:px-0
+    }
+
+    .border-bottom{
+        @apply border border-solid border-x-0 border-t-0 border-gray-200
+    }
+
+    .smooth-transform{
+        @apply transform ease-in-out duration-150
+    }
+}

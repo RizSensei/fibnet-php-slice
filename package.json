@@ -1,7 +1,7 @@
 {
   "name":"encode",
   "scripts": {
-    "css":"tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch"
+    "css":"tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.9",

@@ -1,43 +1,47 @@
-    <!-- mobile-navbar  -->
-    <div class="lg:hidden">
+<div class="lg:hidden">
       <div
-        id="mobile-sidebar"
-        class="fixed top-0 z-[100] overflow-hidden h-screen w-full bg-black bg-opacity-75">
-        <div class="flex w-full h-full">
+        id="sidebar"
+        class="h-full w-full fixed inset-0 bg-black bg-opacity-80 z-50"
+      >
+        <div class="h-full w-2/3 bg-white">
           <div
-            class="h-full w-80 bg-white px-5 pt-3 pb-5 flex flex-col gap-5 overflow-y-auto">
+            class="px-5 w-full flex justify-between items-center border-bottom"
+          >
             <div
-              class="pb-2 flex justify-between items-center border-b border-solid border-x-0 border-t-0 border-b-blue/50">
-              <a href="../src/index.html">
-                <img
-                  src="../src/assets/images/encode-logo.png"
-                  alt="Innovative Solution Logo"
-                  class="h-16" />
-              </a>
-              <span
-                id="close-mobile-nav"
-                class="hover:text-red-500 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18 18 6M6 6l12 12" />
-                </svg>
-              </span>
+              class="h-20 aspect-video w-auto overflow-hidden flex flex-col items-center justify-center p-2"
+            >
+              <img
+                src="/fibnet/public/images/Logo/Fibnet Logo.png"
+                alt="Fibnet Logo"
+                class="w-auto h-auto max-w-full max-h-full object-contain flex-shrink-0"
+              />
             </div>
-            <div class="flex flex-col gap-5 justify-between">
-              <?php
-              include '_partials/_nav_items.php';
-              ?>
+            <button
+              id="close-sidebar"
+              class="bg-transparent border-none text-red-500 hover:scale-105 duration-150 transform ease-in-out"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="px-5 pt-5">
+            <div
+              id="sidebar-section"
+              class="flex flex-col lg:flex-row items-start lg:items-center gap-1"
+            >
+              <script>
+                const sidebarLists = navItems
+                  .map(
+                    (nav, idx) => `
+                                  <a href="${nav.href}" class="text-xs font-medium uppercase text-dark-blue p-2 lg:p-1 rounded-md hover:bg-gray-100 w-full lg:text-center">${nav.label}</a>
+                    `
+                  )
+                  .join("");
+                document.getElementById("sidebar-section").innerHTML =
+                  sidebarLists;
+              </script>
             </div>
           </div>
-          <div id="mobile-sidebar-right" class="flex-grow"></div>
         </div>
+        <div class="flex-1 grow"></div>
       </div>
     </div>

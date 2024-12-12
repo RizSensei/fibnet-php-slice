@@ -11,10 +11,6 @@
 <body class="relative h-full w-full min-h-screen">
     <div class="flex flex-col min-h-screen">
 
-        <!-- topbar  -->
-        <?php
-        include '_partials/_topbar.php';
-        ?>
         <!-- navbar  -->
         <?php
         include '_partials/_navbar.php';

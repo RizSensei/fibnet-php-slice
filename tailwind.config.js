@@ -1,18 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js,php}"],
+  theme: {
+    extend: {
+      colors: {
+        "lime-green": "#91BE56",
+        "lime-green-bright": "#8AF291",
+        "dark-blue": "#2B5488",
+      },
+    },
+  },
   corePlugins: {
     preflight: false,
   },
-  theme: {
-    extend: {
-      colors:{
-        'primary':'#35B3A8'
-      }
-    },
-  },
   plugins: [
-    require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
   ],
-}
+};
