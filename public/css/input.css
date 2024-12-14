@@ -14,4 +14,8 @@
     .smooth-transform{
         @apply transform ease-in-out duration-150
     }
+
+    p{
+        @apply text-justify
+    }
 }

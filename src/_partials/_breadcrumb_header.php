@@ -8,7 +8,7 @@ function renderBreadcrumbHeaderSection($parent_label, $parent_label_href,  $labe
             class="h-full w-full object-cover" />
         <div class="absolute bg-black bg-opacity-50 inset-0 h-full w-full">
             <div class="h-full w-full flex flex-col items-center justify-center">
-                <h1 class="text-white text-center">' . htmlspecialchars($label) . '</h1>
+                <h1 data-aos="fade-up" class="text-white text-center">' . htmlspecialchars($label) . '</h1>
                 <p class="mt-5 text-gray-300 text-xs font-medium">
                     <a
                         href="/fibnet/src/index.php"
@@ -23,3 +23,7 @@ function renderBreadcrumbHeaderSection($parent_label, $parent_label_href,  $labe
     </div>';
 }
 ?>
+
+<script>
+  AOS.init();
+</script>

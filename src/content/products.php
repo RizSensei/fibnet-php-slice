@@ -11,15 +11,15 @@ renderPageHeaderSection($label);
         <script>
             const resources = [{
                     label: "Ocean Cable",
-                    link: "#",
+                    link: "/fibnet/src/ocean-cable.php",
                 },
                 {
                     label: "Tiahan Fiber Optics Cable",
-                    link: "#",
+                    link: "/fibnet/src/tiahan-fiber-optics-cable.php",
                 },
                 {
                     label: "Fiber Optics Solutions",
-                    link: "#",
+                    link: "/fibnet/src/fiber-optics-solutions.php",
                 }
             ];
             const resourcesList = resources

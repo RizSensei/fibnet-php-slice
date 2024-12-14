@@ -1,5 +1,5 @@
 
 <?php
-$content = './content/infrastructure-development.php'; 
+$content = './content/services/infrastructure-development.php'; 
 include './layout/layout.php';
 ?>

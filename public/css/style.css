@@ -101,3 +101,11 @@ button{
   margin-top: 0.5rem;
 }
 
+.splide__slide {
+  opacity: 0.3;
+}
+
+
+.splide__slide.is-active {
+  opacity: 1;
+}

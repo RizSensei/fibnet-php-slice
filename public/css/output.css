@@ -369,6 +369,10 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+p {
+  text-align: justify;
+}
+
 .container {
   width: 100%;
 }
@@ -561,6 +565,14 @@ select {
   grid-column: span 2 / span 2;
 }
 
+.float-left {
+  float: left;
+}
+
+.clear-left {
+  clear: left;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -655,6 +667,10 @@ select {
 
 .h-32 {
   height: 8rem;
+}
+
+.h-48 {
+  height: 12rem;
 }
 
 .h-60 {
@@ -774,6 +790,10 @@ select {
 
 .resize-none {
   resize: none;
+}
+
+.list-inside {
+  list-style-position: inside;
 }
 
 .list-decimal {
@@ -1018,6 +1038,11 @@ select {
   padding-right: 2.5rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1056,11 +1081,6 @@ select {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .pb-10 {

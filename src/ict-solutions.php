@@ -1,4 +1,4 @@
 <?php
-$content = './content/ict-solutions.php'; 
+$content = './content/services/ict-solutions.php'; 
 include './layout/layout.php';
 ?>

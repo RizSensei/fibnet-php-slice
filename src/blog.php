@@ -1,4 +1,4 @@
 <?php
-$content = './content/blog.php'; 
+$content = './content/blog/blog.php'; 
 include './layout/layout.php';
 ?>
