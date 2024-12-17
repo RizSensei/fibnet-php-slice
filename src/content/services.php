@@ -1,22 +1,8 @@
-<div
-  class="relative bg-gray-50 w-full py-10 flex flex-col items-center justify-center text-center overflow-hidden">
-  <div class="z-10">
-    <h1 class="uppercase text-dark-blue border-bottom pb-2">
-      Our Services
-    </h1>
-    <!-- <p class="text-sm mt-2 text-dark-blue px-5 max-w-4xl">
-            We help to build Rural Broadband and bridging rural divides.
-            Therefore, we provide our FPAC Fiber Optics cable as an investment
-            as a partnership to Fiber broadband projects mostly in rural areas.
-          </p> -->
-  </div>
-  <div class="w-full h-full absolute top-0 right-0">
-    <img
-      src="/fibnet/public/images/Network Image.png"
-      alt=""
-      class="h-full w-full object-cover" />
-  </div>
-</div>
+<?php
+include './_partials/_page_header.php';
+$label = " Services";
+renderPageHeaderSection($label);
+?>
 
 <div class="w-full h-full py-10 px-5 sm:px-10 lg:px-20 2xl:px-32">
   <div class="flex flex-col items-center">

@@ -1,8 +1,8 @@
 <div class="padded-container">
   <div
-    class="w-full flex flex-col md:flex-row gap-2 md:gap-0 justify-between">
+    class="w-full flex flex-col lg:flex-row gap-2 md:gap-0 justify-between">
     <h1 class="font-bold text-7xl text-lime-green">Bridge the Future.</h1>
-    <div class="max-w-md 2xl:max-w-2xl flex flex-col gap-3">
+    <div class="pt-10 lg:pt-0 max-w-md 2xl:max-w-2xl flex flex-col gap-3">
       <p class="text-xs text-gray-800">
         Established in March 2017, FibNet has an extensive knowledge of
         Information and Communication Technology, Furthermore We are an
@@ -57,8 +57,8 @@
 <!-- services  -->
 <div class="padded-container">
   <div class="relative h-full w-full">
-    <div class="grid grid-cols-3">
-      <div class="col-span-2">
+    <div class="grid grid-cols-1 lg:grid-cols-3">
+      <div class="order-2 lg:order-1 col-span-1 lg:col-span-2 z-10">
         <div class="grid grid-cols-3 gap-2">
           <div class="relative col-span-1 h-60 w-full">
             <img
@@ -85,8 +85,7 @@
             </div>
           </div>
           <div class="relative col-span-2 h-60 w-full">
-            <div
-              class="relative h-full w-full bg-lime-green overflow-hidden">
+            <div class="relative h-full w-full bg-lime-green overflow-hidden">
               <div class="absolute -top-36 -left-48">
                 <img
                   src="/fibnet/public/images/Network Image.png"
@@ -113,11 +112,11 @@
           </div>
         </div>
       </div>
-      <div class="w-full flex justify-center">
-        <h1 class="text-2xl font-bold">Our Services</h1>
+      <div class="order-1 lg:order-2 w-full flex justify-center">
+        <h1 class="text-2xl font-bold pb-5">Our Services</h1>
       </div>
     </div>
-    <div class="absolute top-0 -right-60">
+    <div class="absolute top-0 -right-60 -z-0">
       <img
         src="/fibnet/public/images/Network Image.png"
         alt=""
@@ -132,7 +131,7 @@
     <h1 class="text-2xl font-bold text-center w-full mb-5">Our Products</h1>
     <div
       id="products-section"
-      class="grid grid-cols-2 md:grid-cols-5 gap-y-5">
+      class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-y-5">
       <script>
         const products = [{
             icon: "/fibnet/public/images/Products/Managed Services.png",
@@ -277,3 +276,7 @@
     </a>
   </div>
 </div>
+
+<script>
+  AOS.init();
+</script>

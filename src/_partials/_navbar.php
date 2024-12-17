@@ -1,5 +1,5 @@
 <nav class="border-bottom">
-      <div class="container mx-auto w-full px-10 2xl:px-0">
+      <div class="w-full px-5 sm:px-10 lg:px-20 2xl:px-32">
         <div class="w-full flex justify-between">
           <a href="/fibnet/src/index.php">
             <div
@@ -41,7 +41,7 @@
                 New update
               </p>
             </button> -->
-            <a
+            <!-- <a
               href="#"
               class="cursor-pointer text-gray-800 no-underline border border-solid border-gray-800 py-2.5 px-5 rounded-xl flex gap-5 items-center"
             >
@@ -54,7 +54,7 @@
               <span class="lg:hidden"
                 ><i class="fa-solid fa-magnifying-glass"></i
               ></span>
-            </a>
+            </a> -->
             <button
               id="open-sidebar"
               class="lg:hidden bg-white cursor-pointer text-gray-800 border border-solid border-gray-800 py-2.5 px-5 rounded-xl"

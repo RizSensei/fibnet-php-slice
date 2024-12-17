@@ -35,9 +35,9 @@
               <div class="footer-list">
                 <h4>Products</h4>
                 <ul>
-                  <li><a href="#">Ocean Cable</a></li>
-                  <li><a href="#">Tiahan Fiber Optics Cable</a></li>
-                  <li><a href="#">Fiber Optics Solutions</a></li>
+                  <li><a href="/fibnet/src/ocean-cable.php">Ocean Cable</a></li>
+                  <li><a href="/fibnet/src/tiahan-fiber-optics-cable.php">Tiahan Fiber Optics Cable</a></li>
+                  <li><a href="/fibnet/src/fiber-optics-solutions.php">Fiber Optics Solutions</a></li>
                 </ul>
               </div>
             </div>

@@ -6,7 +6,7 @@ function renderServices() {
             "icon" => "/fibnet/public/images/Products/Managed Services.png",
             "label" => "Managed Services",
             "description" => "Fibnet Inc is authorized global Representative of the Stainless Steel tube and Steel Armored with Corning glass Fiber Optics Cable.",
-            "href" => "/fibnet/src/managed-services.php"
+            "href" => "/fibnet/src/managed-service.php"
         ],
         [
             "icon" => "/fibnet/public/images/Products/Ocean Cable.png",
@@ -43,7 +43,7 @@ function renderServices() {
                 <img src="' . htmlspecialchars($service['icon']) . '" alt="" class="h-[80px] aspect-square object-contain" />
                 <h2 class="mt-4 pl-4 text-xl text-dark-blue font-semibold border-4 border-solid border-y-0 border-r-0">' . htmlspecialchars($service['label']) . '</h2>
                 <p class="mt-4 text-xs text-gray-700 line-clamp-3">' . htmlspecialchars($service['description']) . '</p>
-                <a href="' . htmlspecialchars($service['href']) . '" class="cursor-pointer mt-4 bg-transparent flex gap-2 border-none items-center text-gray-800 group-hover:text-dark-blue transform ease-in-out duration-150">
+                <a href="' . $service['href'] . '" class="cursor-pointer mt-4 bg-transparent flex gap-2 border-none items-center text-gray-800 group-hover:text-dark-blue transform ease-in-out duration-150">
                     <h5 class="font-medium">Read More</h5>
                     <i class="fa-solid fa-plus"></i>
                 </a>
